@@ -89,7 +89,7 @@ body {
 
     background:
         linear-gradient(rgba(247, 248, 252, 0.55), rgba(247, 248, 252, 0.55)),
-      url("campus.jpg") center/cover no-repeat;
+     url("campus.jpg") center/cover no-repeat;
 }
 .hero-content {
     max-width: 650px;
