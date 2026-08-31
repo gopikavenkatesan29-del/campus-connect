@@ -87,9 +87,10 @@ body {
     align-items: center;
     gap: 60px;
 
-    background:
-        linear-gradient(rgba(247, 248, 252, 0.55), rgba(247, 248, 252, 0.55)),
-     url("campus.jpg") center/cover no-repeat;
+    background-image: url("campus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hero-content {
     max-width: 650px;
