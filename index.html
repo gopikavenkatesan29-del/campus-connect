@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>StudentSphere | Student Events</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<!-- Welcome Popup -->
+<div id="welcomePopup" class="welcome-popup">
+
+    <div class="popup-box">
+
+        <div class="popup-icon">🎓</div>
+
+       <h2>Welcome to StudentSphere!</h2>
+
+        <p>
+Discover exciting events, participate in competitions
+and create unforgettable memories with StudentSphere.
+        </p>
+
+        <button onclick="closePopup()">
+    Explore StudentSphere →
+</button>
+
+    </div>
+
+</div>
+    <nav class="navbar">
+
+    <div class="logo">
+    <span class="logo-icon">🎓</span>
+    <span>StudentSphere</span>
+</div>
+
+<div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#about">About</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+    <a href="#admin">Admin</a>
+</div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+<p class="small-title">WELCOME TO StudentSphere</p>
+
+            <h1>
+                Discover.
+                <span>Participate.</span>
+                Create.
+            </h1>
+
+            <p class="hero-text">
+           Experience exciting events, showcase your talents, compete with your peers, and create unforgettable student experiences—all in one place.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="scrollToEvents()" class="primary-btn">
+                    Explore Events →
+                </button>
+
+                <button onclick="scrollToRegister()" class="secondary-btn">
+                    Register Now
+                </button>
+
+            </div>
+<div class="hero-highlights">
+
+    <div>
+        <span>🎯</span>
+        <strong>Compete</strong>
+    </div>
+
+    <div>
+        <span>🏆</span>
+        <strong>Showcase Talent</strong>
+    </div>
+
+    <div>
+        <span>🤝</span>
+        <strong>Connect</strong>
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="floating-icon">🎓</div>
+
+<h3>StudentSphere Campus Events</h3>
+
+<p>
+    Technical • Cultural • Workshops • Competitions
+</p>
+
+            <div class="event-count">
+                <strong>10+</strong>
+                <span>Upcoming Events</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Statistics -->
+    <section class="stats">
+
+        <div>
+            <h2>10+</h2>
+            <p>Events</p>
+        </div>
+
+        <div>
+    <h2 id="studentCount">0</h2>
+    <p>Registered Students</p>
+</div>
+
+        <div>
+            <h2>20+</h2>
+            <p>Competitions</p>
+        </div>
+
+        <div>
+            <h2>100%</h2>
+            <p>Student Engagement</p>
+        </div>
+
+    </section>
+
+
+    <!-- Events -->
+    <section id="events" class="section">
+
+        <p class="section-label">WHAT'S HAPPENING</p>
+
+        <h2 class="section-title">
+            Upcoming Events
+        </h2>
+
+        <p class="section-description">
+           Explore upcoming technical, cultural and educational events
+for students.
+        </p>
+
+
+        <div class="event-container">
+
+
+            <!-- Event 1 -->
+            <div class="event-card">
+
+               <div class="event-image">
+    <img src="image/webcraft.jpg" alt="Web Craft Event">
+               </div>
+
+                <div class="event-content">
+
+                    <span class="event-tag">
+                        TECHNICAL
+                    </span>
+
+                    <h3>Web Craft</h3>
+
+                    <p>
+                        Design creative and responsive websites
+                        and showcase your web development skills.
+                    </p>
+
+                    <div class="event-details">
+
+                        <span>📅 28 Aug 2026</span>
+
+                        <span>📍 Computer Lab</span>
+
+                    </div>
+
+                    <button onclick="selectEvent('Web Craft')">
+                        Register →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Event 2 -->
+            <div class="event-card">
+
+              <div class="event-image">
+    <img src="image/quiz.jpg" alt="Technical Quiz Event">
+              </div>
+
+                <div class="event-content">
+
+                    <span class="event-tag">
+                        QUIZ
+                    </span>
+
+                    <h3>Tech Quiz</h3>
+
+                    <p>
+                        Challenge yourself with exciting questions
+                        from computer science and technology.
+                    </p>
+
+                    <div class="event-details">
+
+                        <span>📅 30 Aug 2026</span>
+
+                        <span>📍 Seminar Hall</span>
+
+                    </div>
+
+                    <button onclick="selectEvent('Tech Quiz')">
+                        Register →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Event 3 -->
+            <div class="event-card">
+
+                <div class="event-image">
+    <img src="image/cultural.jpg" alt="Cultural Fest">
+                </div>    
+
+                <div class="event-content">
+
+                    <span class="event-tag">
+                        CULTURAL
+                    </span>
+
+                    <h3>Cultural Fest</h3>
+
+                    <p>
+                        Celebrate creativity through music, dance,
+                        art and cultural performances.
+                    </p>
+
+                    <div class="event-details">
+
+                        <span>📅 5 Sep 2026</span>
+
+                        <span>📍 Main Auditorium</span>
+
+                    </div>
+
+                    <button onclick="selectEvent('Cultural Fest')">
+                        Register →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div class="about-text">
+
+            <p class="section-label">ABOUT THE PROJECT</p>
+
+            <h2>
+Making Student Events
+<span>Simple & Connected.</span>
+            </h2>
+
+            <p>
+StudentSphere is a web-based student event management
+platform designed to help students discover upcoming
+events and register easily.
+            </p>
+
+            <p>
+             
+Instead of searching through multiple notices and messages,
+students can find important event information in one place.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Discover</h3>
+               <p>Find upcoming student events easily.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📝</div>
+                <h3>Register</h3>
+                <p>Register for events through a simple form.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <h3>Connect</h3>
+                <p>Participate and connect with other students.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Registration -->
+    <section id="register" class="section register-section">
+
+        <p class="section-label">JOIN AN EVENT</p>
+
+        <h2 class="section-title">
+            Event Registration
+        </h2>
+
+        <p class="section-description">
+            Fill in your details and register for your favourite event.
+        </p>
+
+
+        <form id="registrationForm">
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Department</label>
+
+                <select id="department">
+
+                    <option value="">Select Department</option>
+
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>BCA</option>
+                    <option>BBA</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Select Event</label>
+
+                <select id="event">
+
+                    <option value="">Select Event</option>
+
+                    <option>Web Craft</option>
+
+                    <option>Tech Quiz</option>
+
+                    <option>Cultural Fest</option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+                Complete Registration →
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact -->
+<!-- Admin Dashboard -->
+<section id="admin" class="admin-section">
+
+    <p class="section-label">ADMIN PANEL</p>
+
+    <h2 class="section-title">Registration Dashboard</h2>
+
+    <p class="section-description">
+       Monitor student registrations for upcoming events.
+    </p>
+
+    <div class="admin-cards">
+
+        <div class="admin-card">
+            <span>👥</span>
+            <h3 id="adminTotal">0</h3>
+            <p>Total Registrations</p>
+        </div>
+
+        <div class="admin-card">
+            <span>💻</span>
+            <h3 id="webCraftCount">0</h3>
+            <p>Web Craft</p>
+        </div>
+
+        <div class="admin-card">
+            <span>🧠</span>
+            <h3 id="quizCount">0</h3>
+            <p>Tech Quiz</p>
+        </div>
+
+        <div class="admin-card">
+            <span>🎭</span>
+            <h3 id="culturalCount">0</h3>
+            <p>Cultural Fest</p>
+        </div>
+
+    </div>
+
+</section>
+    <section id="contact" class="contact-section">
+
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h2>
+            Have Questions?
+        </h2>
+
+        <p>
+
+
+
+<section id="contact" class="contact-section">
+
+    <p class="section-label">GET IN TOUCH</p>
+
+    <h2>
+        Have Questions?
+    </h2>
+
+    <p>
+        Have questions about StudentSphere? Get in touch with us.
+    </p>
+
+    <div class="contact-info">
+
+        <div>
+            📧 contact@studentsphere.com
+        </div>
+
+        <div>
+            📞 +91 XXXXX XXXXX
+        </div>
+
+        <div>
+            📍 Student Hub
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+
+       
+<div class="footer-logo">
+    Student<span>Sphere</span>
+</div>
+
+        <p>
+            Smart Event Management for Students
+        </p>
+
+        <p class="copyright">
+           
+© 2026 StudentSphere | Developed by Gopika
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
