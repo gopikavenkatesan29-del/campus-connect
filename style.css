@@ -89,7 +89,7 @@ gap: 60px;
 
 background:
  background:
-    linear-gradient(rgba(247, 248, 252, 0.18), rgba(247, 248, 252, 0.24)),
+    linear-gradient(rgba(247, 248, 252, 0.18), rgba(247, 248, 252, 0.25)),
     url("campus.jpg") center/cover no-repeat;
 }
 .hero-content {
