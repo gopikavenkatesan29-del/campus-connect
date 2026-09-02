@@ -88,7 +88,8 @@ align-items: center;
 gap: 60px;
 
 background:
-    linear-gradient(rgba(247, 248, 252, 0.15), rgba(247, 248, 252, 0.25)),
+ background:
+    linear-gradient(rgba(247, 248, 252, 0.18), rgba(247, 248, 252, 0.18)),
     url("campus.jpg") center/cover no-repeat;
 }
 .hero-content {
